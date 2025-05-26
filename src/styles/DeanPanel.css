@@ -1,0 +1,61 @@
+General Styling * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.dean-panel {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #1e3c72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.main-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Box */
+.notification-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notification-box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.notification-box ul {
+  list-style: none;
+}
+
+.notification-box li {
+  padding: 5px 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.notification-box li:last-child {
+  border-bottom: none;
+}

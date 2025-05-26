@@ -1,0 +1,153 @@
+/* General Styling */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.provost-panel {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #1e3c72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.main-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.renewal-editor {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.renewal-text {
+  font-weight: 500;
+  color: #303f9f;
+  margin-right: 4px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 8px;
+  color: #5c6bc0;
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e8eaf6;
+  color: #3f51b5;
+}
+
+.edit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.3);
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.renewal-dropdown {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  padding: 8px 32px 8px 12px;
+  font-size: 0.95rem;
+  color: #303f9f;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23303f9f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.renewal-dropdown:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.2);
+}
+
+.edit-actions {
+  display: flex;
+  margin-left: 10px;
+  gap: 6px;
+}
+
+.save-btn,
+.cancel-btn {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save-btn {
+  background-color: #e8f5e9;
+  color: #43a047;
+}
+
+.save-btn:hover {
+  background-color: #c8e6c9;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+.cancel-btn:hover {
+  background-color: #ffcdd2;
+  transform: scale(1.05);
+}
+
+.save-btn:focus,
+.cancel-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

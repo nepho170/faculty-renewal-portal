@@ -1,0 +1,314 @@
+/* Modern ApplicationDetails.css */
+.application-details {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.application-details h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 1.35rem;
+  border-bottom: 2px solid #e3f2fd;
+  padding-bottom: 12px;
+}
+
+.application-details h4 {
+  margin: 24px 0 16px;
+  color: #303f9f;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Faculty info box container */
+.faculty-info-container {
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border-left: 4px solid #3f51b5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.faculty-info-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.application-details .info-box {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.application-details .info-box:last-child {
+  margin-bottom: 0;
+}
+
+.application-details .info-box label {
+  font-weight: 500;
+  width: 140px;
+  color: #455a64;
+  font-size: 0.95rem;
+}
+
+.application-details .info-box span {
+  color: #212121;
+  font-size: 1rem;
+}
+
+.application-details .termination-reason {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-left: 4px solid #ff5722;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.application-details .termination-reason h4 {
+  margin: 0 0 12px 0;
+  color: #e64a19;
+  font-size: 1rem;
+}
+
+.application-details .termination-reason p {
+  margin: 0;
+  color: #424242;
+  line-height: 1.6;
+}
+
+.application-details .application-info {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border-left: 4px solid #3f51b5;
+  transition: box-shadow 0.3s ease;
+}
+
+.application-details .application-info:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.application-details .application-info p {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application-details .ai-summary-section {
+  margin: 20px 0;
+  background-color: #e8f5e9;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #43a047;
+}
+
+.application-details .ai-summary {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.application-details .approval-steps {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.application-details .approval-step {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #5c6bc0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.application-details .approval-step:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-details .step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.application-details .step-date {
+  font-size: 0.85rem;
+  color: #78909c;
+  margin-bottom: 8px;
+}
+
+.application-details .years-granted {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #303f9f;
+}
+
+.application-details .step-comments {
+  font-style: italic;
+  color: #546e7a;
+  background-color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* History section styling */
+.application-details .history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #e8eaf6;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin: 24px 0 12px;
+  transition: background-color 0.2s;
+}
+
+.application-details .history-header:hover {
+  background-color: #c5cae9;
+}
+
+.application-details .history-header h4 {
+  margin: 0;
+  color: #3949ab;
+}
+
+.application-details .toggle-arrow {
+  transition: transform 0.3s ease;
+  color: #3949ab;
+  font-size: 12px;
+}
+
+.application-details .toggle-arrow.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.application-details .application-history {
+  margin-top: 16px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.application-details .history-item {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #9fa8da;
+  transition: background-color 0.2s;
+}
+
+.application-details .history-item:hover {
+  background-color: #f5f5f5;
+}
+
+.application-details .history-item p {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application-details .history-approvals {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.application-details .history-approval-step {
+  margin-bottom: 8px;
+  padding: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.application-details .history-approval-step strong {
+  color: #303f9f;
+  margin-right: 8px;
+}
+
+.application-details .history-comments {
+  font-style: italic;
+  color: #546e7a;
+  margin-top: 6px;
+  margin-left: 16px;
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.application-details .no-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin: 0;
+  color: #78909c;
+}
+
+.application-details .no-summary svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #78909c;
+}
+
+.application-details .no-summary p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.application-details .process-doc-btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.application-details .process-doc-btn:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.application-details .process-doc-btn:active {
+  transform: translateY(0);
+}

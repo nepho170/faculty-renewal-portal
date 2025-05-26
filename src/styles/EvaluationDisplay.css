@@ -1,0 +1,58 @@
+/* Styles for evaluation display */
+.evaluation-section {
+  margin: 15px 0;
+}
+
+.evaluation-section h4 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.evaluation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.evaluation-item {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.evaluation-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Evaluation color classes */
+.evaluation-excellent {
+  background-color: rgba(46, 204, 113, 0.2);
+  border: 1px solid rgba(46, 204, 113, 0.5);
+  color: #27ae60;
+}
+
+.evaluation-verygood {
+  background-color: rgba(52, 152, 219, 0.2);
+  border: 1px solid rgba(52, 152, 219, 0.5);
+  color: #2980b9;
+}
+
+.evaluation-good {
+  background-color: rgba(241, 196, 15, 0.2);
+  border: 1px solid rgba(241, 196, 15, 0.5);
+  color: #d4ac0d;
+}
+
+.evaluation-satisfactory {
+  background-color: rgba(230, 126, 34, 0.2);
+  border: 1px solid rgba(230, 126, 34, 0.5);
+  color: #d35400;
+}
+
+.evaluation-unsatisfactory {
+  background-color: rgba(231, 76, 60, 0.2);
+  border: 1px solid rgba(231, 76, 60, 0.5);
+  color: #c0392b;
+}

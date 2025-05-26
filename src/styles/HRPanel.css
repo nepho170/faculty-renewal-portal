@@ -1,0 +1,28 @@
+General Styling * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hr-panel {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #1e3c72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.main-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

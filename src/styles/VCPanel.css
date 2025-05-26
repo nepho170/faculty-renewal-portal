@@ -1,0 +1,61 @@
+.vc-panel {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #1e3c72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.main-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vc-panel .subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.vc-panel .termination-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vc-panel .no-requests {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Override some FacultyListItem styles for VC panel */
+.vc-panel .faculty-item {
+  padding: 18px;
+  border-left: 4px solid #3498db;
+}
+
+/* Make the termination popup slightly wider */
+.vc-panel .termination-popup {
+  max-width: 750px;
+}
+
+/* Add styles for the decision panel inside VC panel */
+.vc-panel .decision-panel {
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}

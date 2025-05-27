@@ -136,9 +136,7 @@ MIT License
 
 ---
 
-## 👥 Collaborators
-@nepho170 @ymu4
----
+
 
 ## 📌 Notes
 

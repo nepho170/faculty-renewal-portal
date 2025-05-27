@@ -141,3 +141,9 @@ MIT License
 ## 📌 Notes
 
 This project handles sensitive academic workflows. Ensure `.env` files and credentials are **not committed** to version control.
+![Screenshot (1826)](https://github.com/user-attachments/assets/a7b286d3-4802-47e6-b30a-7719f6451388)
+![Screenshot (1824)](https://github.com/user-attachments/assets/962ed6f5-3942-4a7d-96d1-a2ae75ff22a5)
+![Screenshot (1821)](https://github.com/user-attachments/assets/16dd710c-d4ee-49bf-9015-2a21bccc0cfe)
+![Screenshot (1819)](https://github.com/user-attachments/assets/67312c79-341d-4503-8db9-0c34745ffde4)
+![Screenshot (1829)](https://github.com/user-attachments/assets/9aabc6b5-403e-494a-8f19-83e30598f313)
+

@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 🏛️ Faculty Renewal Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application for managing university faculty contract renewals, built with a React frontend and Node.js backend. It streamlines the review process with role-specific dashboards, automated evaluation summaries using LLMs, and structured workflows.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- Faculty application and document upload
+- Admin, HR, Provost, VC, and Dean role panels
+- PDF evaluation uploads & LLM-based auto-summary
+- Secure JWT authentication and user management
+- PDF viewer, decision panels, and tracking UI
+- Local file storage for uploaded documents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **Frontend**: React.js
+- **Backend**: Node.js with Express
+- **Database**: MySQL
+- **LLM Integration**: OpenAI or Ollama
+- **File Uploads**: multer + local storage
+- **Styles**: CSS Modules
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+faculty-renewal-portal/
+│
+├── src/
+│   ├── components/         # UI components like Panel, Tabs, etc.
+│   ├── contexts/           # AuthContext for global login state
+│   ├── pages/              # Role-based pages: HRPanel, VCPanel, etc.
+│   ├── services/           # API utilities
+│   ├── styles/             # CSS files for components
+│   ├── App.js              # Main app routing
+│   └── index.js            # React entry point
+│
+├── uploads/
+│   └── evaluation_documents/  # Stores uploaded PDF evaluations
+│
+├── templates/              # Placeholder for document templates
+├── .env                    # Environment variables
+├── package.json            # Dependencies
+├── README.md               # You're here
+└── testOllama.js           # Sample script to test LLM
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Setup Instructions
 
-### `npm run eject`
+### 1. Clone the repository
+```bash
+git clone https://github.com/nepho170/faculty-renewal-portal.git
+cd faculty-renewal-portal
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Backend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Install server dependencies:
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Create `.env` file:
+```env
+PORT=5003
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=faculty_renewal_portal
+DB_PORT=3306
+JWT_SECRET=your-secret-key
+```
 
-## Learn More
+#### Start the backend:
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Frontend Setup (React)
 
-### Code Splitting
+If the React app is in a subdirectory (`client/`), navigate into it:
+```bash
+cd client
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 🧪 Testing Ollama / AI Evaluation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can test the connected LLM summarization system:
+```bash
+node testOllama.js
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📤 Upload Evaluation Document
 
-### Advanced Configuration
+Upload faculty evaluations using the backend script:
+```bash
+node uploadDocument.js path/to/report.pdf <facultyId> <applicationId>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Uploaded files are saved under:
+```
+/uploads/evaluation_documents/
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ✅ Requirements
 
-### `npm run build` fails to minify
+Install all backend dependencies:
+```bash
+npm install axios dotenv express fs-extra mysql2 multer
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📝 License
+
+MIT License
+
+---
+
+## 👥 Collaborators
+@nepho170 @ymu4
+---
+
+## 📌 Notes
+
+This project handles sensitive academic workflows. Ensure `.env` files and credentials are **not committed** to version control.
